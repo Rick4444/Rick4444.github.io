@@ -32,8 +32,12 @@
         
     }
 
-    .navbar a.right {
+    .navbar a.right  {
           float: right;
+    }
+
+    .navbar a.left  {
+          float: left;
     }
 
     .navbar a {
@@ -255,7 +259,63 @@ body {
 }
 
 .navFont{
+  color: pink;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #145DA0;
+}
+
+li {
+  float: right;
+}
+
+lir {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
   color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: white;
+  color: #145DA0;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #145DA0;;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: white;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 </style>
@@ -263,21 +323,28 @@ body {
 
 <body>
 <div>
-    <div class="navbar"> 
-      <a href="https://rick4444.github.io/" style="color:#FAFBF4;">Rameshwar Gupta</a>
-      <a href="https://www.instagram.com/isthis_rudra/" class="right" target="_blank" style="color:white;">Contact Me</a>
-      <a href="https://www.instagram.com/isthis_rudra/" class="right" target="_blank" style="color:white;">Instagram</a>
-      <a href="https://www.linkedin.com/in/rameshwar-gupta-22081990/" target="_blank" class="right" style="color:white;">Linkedin</a>
-      <a href="https://github.com/Rick4444" class="right"target="_blank" style="color:white;">GitHub</a>
-      <a href="https://rick4444.github.io/" class="right" target="_blank" style="color:white;">Home</a>
-    </div>
+    <ul>
+      <li><a href="https://www.linkedin.com/in/rameshwar-gupta-22081990/" target="_blank">Contact</a></li>
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">About</a>
+        <div class="dropdown-content">
+          <a href="https://www.linkedin.com/in/rameshwar-gupta-22081990/" target="_blank">Linkedin</a>
+          <a href="#" target="_blank">Resume</a>
+          <a href="https://github.com/Rick4444" target="_blank">GitHub</a>
+          <a href="https://stackoverflow.com/users/3312917/rameshwar-gupta" target="_blank">Stack Overflow</a>
+          <a href="https://www.instagram.com/isthis_rudra/" target="_blank">Instagram</a>
+        </div>
+      </li>
+      <li><a href="https://rick4444.github.io/">Home</a></li>
+      <li><a href="#home" class="right">Rameshwar Gupta</a></li>
+    </ul>
 
 <div class="mainDiv">
       <div class="figure">
         
       </div>
        <div class="bottomDiv">
-          <h1 class="center" style="color:white;">Senior Technical Account Manager</h1>
+          <h1 class="center" style="color:white;">Technical Lead - iOS</h1>
             <p class="p1" style="text-align: center;">The true passion for creating interactive and innovative experiences has driven me since 2014.<br>My curiosity and will did the rest.</p>
             <a href="http://www.stackoverflow.com/" target="_blank">
               <button class="button">See My Work!</button>
@@ -288,7 +355,7 @@ body {
     </body>
       <div>
         <h2 class="p2" style="text-align: center;">Hello,</h2>
-        <h3 class="p3">My name is Rameshwar Gupta and I'm a Senior Technical Account Manager.</h3>
+        <h3 class="p3">My name is Rameshwar Gupta and I'm a Technical Lead - iOS.</h3>
         <p style="text-align: center;">If you think about computer programming, it's as antisocial as it gets - <b>Shawn fanning</b></p>
         <img class="center"  src="mypic.jpeg" alt="mypic">
         <p style="text-align: center;">I've been doing this since 2014 for different IT companies across INDIA.<br>I am currently working at <strong>CleverTap Technology Private limited</strong></p>
