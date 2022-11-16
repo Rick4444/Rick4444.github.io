@@ -9,9 +9,8 @@
     .navbar {
         overflow: hidden;
         background-color: rgb(255, 255, 255);
-        position: sticky;
-        position: -webkit-sticky;
-        top: 0;
+        /* position: sticky; */
+        /* position: -webkit-sticky; */
         box-shadow: 0 2px 2px -2px rgb(125, 125, 125);
         font-size: 20px;
         height: 260;
@@ -23,9 +22,9 @@
 
     .navbar a {
         float: left;
-        display: block;
+        /* display: block; */
         text-align: center;
-        padding: 22px 30px;
+        padding: 20px 20px;
         text-decoration: none;
     }
 
@@ -37,11 +36,13 @@
     }
 
     .figure {
-        background-image: url('https://dev-updates-uploads.s3.ap-south-1.amazonaws.com/1654614654390-Code%20Snippts.png');
-        background-image: "bg1.png";
+        background-image: url('https://assets-global.website-files.com/5ed5c5ca6170c967e304ff11/62aff8a32ec6e72b6e885e70_5fe9ab023d53645b18a34995_pexels-photo-69432-p-1600.jpeg');
+        /* background-image: "bg1.png"; */
         height: 300px;
         width: 100%;
-        filter: contrast(200%);
+        filter: blur(5px);
+        z-index: -1;
+
     }
 
     .blur {filter: blur(4px);}
@@ -73,12 +74,15 @@
         height: 200px;
         width: 200px;
         left: 50%;
+        
     }
 
     .center {
         display: block;
         margin-left: auto;
         margin-right: auto;
+        object-fit:cover;
+       
     }
 
 
@@ -107,7 +111,7 @@
        border: none;
        position: absolute;
        left: 50%;
-       top: 50%;
+       top: 195%;
        transform: translate(-50%, -50%);
        -ms-transform: translate(-50%, -50%);
     }
@@ -233,24 +237,42 @@ body {
 
 .fa {font-size:50px;}
 
+.bottomDiv {
+    position: relative;
+    bottom: 275px;
+
+}
+
+.mainDiv {
+  height: 325px;
+}
+
 </style>
 </head>
 
 <body>
+<div>
     <div class="navbar">
-      <a href="#" style="color:rgb(89, 185, 157);" >Rameshwar Gupta</a>
-      <a href="#" class="right" style="color:rgb(89, 185, 157);">About</a>
-      <a href="#" class="right" style="color:rgb(89, 185, 157);">Work</a>
-      <a href="#" class="right" style="color:rgb(89, 185, 157);">Resume</a>
-      <a href="#" class="right" style="color:rgb(89, 185, 157);">Home</a>
+      <a href="https://rick4444.github.io/" style="color:rgb(89, 185, 157);" >Rameshwar Gupta</a>
+      <a href="https://www.instagram.com/isthis_rudra/" class="right" target="_blank" style="color:rgb(89, 185, 157);">Contact Me</a>
+      <a href="https://www.instagram.com/isthis_rudra/" class="right" target="_blank" style="color:rgb(89, 185, 157);">Instagram</a>
+      <a href="https://www.linkedin.com/in/rameshwar-gupta-22081990/" target="_blank" class="right" style="color:rgb(89, 185, 157);">Linkedin</a>
+      <a href="https://github.com/Rick4444" class="right"target="_blank" style="color:rgb(89, 185, 157);">GitHub</a>
+      <a href="https://rick4444.github.io/" class="right" target="_blank" style="color:rgb(89, 185, 157);">Home</a>
     </div>
 
-    <div class="figure">
-        <h1 class="center" style="color:rgb(89, 185, 157);">Senior Technical Account Manager</h1>
-        <p class="p1" style="text-align: center;">The true passion for creating interactive and innovative experiences has driven me since 2007.<br>My curiosity and will did the rest.</p>
-        <button class="button">See My Work!</button>
+<div class="mainDiv">
+      <div class="figure"></div>
+       <div class="bottomDiv">
+          <h1 class="center" style="color:rgb(89, 185, 157);">Senior Technical Account Manager</h1>
+            <p class="p1" style="text-align: center;">The true passion for creating interactive and innovative experiences has driven me since 2007.<br>My curiosity and will did the rest.</p>
+            <a href="http://www.stackoverflow.com/" target="_blank">
+              <button class="button">See My Work!</button>
+          </a>
       </div>
-
+</div>
+</div>
+    </body>
       <div>
         <h2 class="p2" style="text-align: center;">Hello,</h2>
         <h3 class="p3">My name is Rameshwar Gupta and I'm a Senior Technical Account Manager.</h3>
